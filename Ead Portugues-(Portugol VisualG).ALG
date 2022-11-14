@@ -1,45 +1,45 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
+// Professor   : Cleberson 
+// DescriÃ§Ã£o   : Ead Portugues
+// Autor(a)    : Gabriel
 // Data atual  : 08/11/2022
 Var
-// Seção de Declarações das variáveis
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
  aluno, Data, um, doisa, doisb, doisc, doisd, doise, tres: caractere
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
  escreval("Atividade de Portugues - Ead")
  escreva("Aluno(a):")
  leia (aluno)
- escreva("Série 2° DATA:")
+ escreva("SÃ©rie 2Â° DATA:")
  leia (data)
  escreval("1. Escreva seu nome Completo em letra cursiva.")
  leia (um)
- escreval("2. Leia o texto e responda as questões abaixo:")
+ escreval("2. Leia o texto e responda as questÃµes abaixo:")
  timer (3000)
  timer (0)
  escreval("     QUE SUJEIRA!     ")
  escreval("CASA DE BRUXA TEM RATO,")
  escreval("SAPO, MORCEGO e CORUJA.")
- escreval("PARA QUE É QUE SERVE A VASSOURA,")
+ escreval("PARA QUE Ã‰ QUE SERVE A VASSOURA,")
  escreval("SE A CASA DELA E TODA SUJA?")
  timer(4000)
  timer (0)
  escreval("A) De quem e a casa?")
  escreva("Resposta:")
  leia (doisa)
- escreval("B) Como é a casa dela?")
+ escreval("B) Como Ã© a casa dela?")
  escreva("Resposta:")
  leia (doisb)
- escreval("C) Quais são os animais que tem na casa da bruxa?")
+ escreval("C) Quais sÃ£o os animais que tem na casa da bruxa?")
  escreva("Resposta:")
  leia (doisc)
  escreval("D) Qual o objeto que usamos para varrer a casa?")
  escreva ("Resposta:")
  leia (doisd)
- Escreval("E) Qual é o Título do texto?")
+ Escreval("E) Qual Ã© o TÃ­tulo do texto?")
  escreva ("Resposta:")
  leia (doise)
  Escreval("3. Cria uma frase com esses animais: rato,sapo,morcego e coruja.")

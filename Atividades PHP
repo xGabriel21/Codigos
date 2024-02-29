@@ -1,1 +1,165 @@
+<?php
+    echo '1- Imprimir informações:Escreva um programa PHP simples para imprimir "Olá mundo!" na tela.';
+    
+    echo '<br/><br/> Olá mundo!';
+    
+    echo '<br/><br/> 2- Declarar variáveis: crie um programa PHP que declare uma variável com seu nome e imprima "Olá, [seu nome]!".';
 
+    $nome = "Gabriel";
+
+    echo '<br/><br/> Olá, ' . $nome;
+
+    echo '<br/><br/> 3- Estruturas condicionais: Faça um programa PHP que verifique se um número é par ou impar.';
+
+    $num = 11;
+    if ($num % 2 == 0){
+        echo '<br/><br/> O número e par';
+    } else {
+        echo '<br/><br/> O número e impar';
+    };
+
+    echo '<br/><br/> 4- Repetição: Escreva um programa PHP que imprima os números de 1 a 10 em uma linha <br/><br/>';
+
+    for ($num2 = 1; $num2 != 11; $num2++) {
+        echo ' ' . $num2;
+    }; 
+
+    echo '<br/><br/> 5- Funções: crie um programa PHP que calcule e imprima a soma de dois números usando uma função.';
+
+    function soma($num3, $num4) {
+       return $num3 + $num4;
+    }
+    echo '<br/><br/>' . soma(7, 14);
+
+    echo '<br/><br/> 6- Vetores: faça um programa PHP que calcula a média de um array de números.';
+
+    $array = array(5, 4, 5, 10);
+    $total = count ($array);
+    $soma = array_sum($array);
+    $media = $soma / $total;
+    echo '<br/><br/>' . $media;
+
+    echo '<br/><br/> 7- Matrizes: Escreva um programa PHP para calcular e imprimir a transposta de uma matriz. <br/><br/>';
+
+    $matriz = array(
+        array(1, 2, 3),
+        array(4, 5, 6),
+        array(7, 8, 9)
+    );
+
+    $transposta = array();
+
+    for ($i = 0; $i < 3; $i++) {
+        for ($j = 0; $j < 3; $j++) {
+            $transposta[$i][$j] = $matriz[$j][$i];
+       }
+    }
+    foreach ($transposta as $linha) {
+        echo implode(" ", $linha) . "<br>";
+    }
+
+    echo '<br/><br/> 8- Métodos: Crie uma programa em PHP que receba o valor de uma circunferência de um círculo. Implemente um método para calcular a área do círculo.<br/><br/>';
+
+    function areadocirculo($raio){
+        $area = 3.14 * $raio**2;
+        echo "A área do círculo é: " . $area;
+    }
+    areadocirculo(7);
+
+    echo '<br/><br/> 9- Estruturas condicionais: Faça um programa PHP que determine se um número é positivo, negativo ou zero.<br/><br/>';
+
+    $num5 = 7;
+    if ($num5 > 0){
+        echo "O número " . $num5 . " e positivo!";
+    }
+    elseif ($num5 < 0){
+        echo "O número " . $num5 . " e negativo!";
+    }
+    else {
+        echo "O número " . $num5 . " e = 0!";
+    };
+
+    echo '<br/><br/> 10- Repetição: Escreva um programa PHP que imprima os primeiros 10 números da sequência de Fibonacci.<br/><br/>';
+
+    $num6 = 0;
+    $num7 = 1;
+    echo "Sequência de Fibonacci: ". $num6 ." ". $num7 ." ";
+    for ($x = 0; $x != 10; $x++){
+        $x1 = $num7 + $num6;
+        echo $x1." ";
+        $num6 = $num7;
+        $num7 = $x1;
+    }
+
+    echo '<br/><br/> 11- Funções: Crie uma função em PHP que verifique se uma palavra é um palíndromo.<br/><br/>';
+
+    function palindromo($palavra){
+        $reverso = strrev($palavra);
+        if ($reverso == $palavra){
+            echo "Essa palavra é um palíndromo!!";
+        }
+        else{
+            echo "essa palavra não e um palíndromo";
+        }
+    }
+    palindromo("ovo");
+
+    echo '<br/><br/> 12- Vetores: Faça um programa PHP que encontre o segundo maior elemento em um array.<br/><br/>';
+    
+    $array = array(5, 4, 7, 10);
+    rsort($array);
+    echo "O segundo maior elemento do array e: " . $array[1];
+
+    echo '<br/><br/> 13- Matrizes: Escreva um programa PHP que verifique se uma matriz é simétrica ou não.<br/><br/>';
+
+    function verificaSimetria($matriz) {
+        $linhas = count($matriz);
+        $colunas = count($matriz[0]);
+
+        for ($i = 0; $i < $linhas; $i++) {
+            for ($j = 0; $j < $colunas; $j++) {
+                if ($matriz[$i][$j] != $matriz[$j][$i]) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    $matriz = array(
+        array(1, 2, 3),
+        array(2, 4, 5),
+        array(3, 5, 6)
+    );
+
+    if (verificaSimetria($matriz)) {
+        echo "A matriz é simétrica.";
+    } else {
+        echo "A matriz não é simétrica.";
+    } 
+    
+    echo '<br/><br/> 14- Métodos: Crie uma classe em PHP que represente uma calculadora. Implemente métodos para realizar operações básicas como adição, subtração, multiplicação e divisão.';
+
+    function adicao($num8, $num9){
+        $x2 = $num8 + $num9;
+        echo "<br/><br/>" . $num8 . " + " . $num9 . " = " . $x2;
+    }
+    function subtracao($num8, $num9){
+        $x2 = $num8 - $num9;
+        echo "<br/><br/>" . $num8 . " - " . $num9 . " = " . $x2;
+    }
+    function divisao($num8, $num9){
+        $x2 = $num8 / $num9;
+        echo "<br/><br/>" . $num8 . " ÷ " . $num9 . " = " . $x2;
+    }
+    function multiplicacao($num8,$num9){
+        $x2 = $num8 * $num9;
+        echo "<br/><br/>" . $num8 . " x " . $num9 . " = " . $x2;
+    }
+    adicao(7,14);
+    subtracao(21,14);
+    divisao(21,3);
+    multiplicacao(2,7);
+
+?>
